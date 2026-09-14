@@ -747,7 +747,7 @@ img {
 
 .product-image {
   aspect-ratio: 4 / 3;
-  background: var(--surface-light);
+  background: #fff;
 }
 
 .product-image img,
@@ -758,6 +758,7 @@ img {
 }
 
 .product-image img {
+  object-fit: contain;
   transition: transform 0.45s ease;
 }
 
@@ -1103,6 +1104,28 @@ img {
 .wireframe-title span {
   color: var(--muted);
   font-size: 0.68rem;
+}
+
+.wireframe-image-link {
+  display: block;
+  overflow: hidden;
+  max-height: 560px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  cursor: zoom-in;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.wireframe-image-link:hover,
+.wireframe-image-link:focus-visible {
+  border-color: rgba(217, 255, 67, 0.65);
+  transform: translateY(-2px);
+}
+
+.wireframe-image-link img {
+  width: 100%;
+  height: auto;
 }
 
 .wireframe {
