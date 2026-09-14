@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Protótipo acadêmico da SoftBike, loja de bicicletas, peças e experiências sobre duas rodas.">
+  <title>SoftBike | Pedale a cidade de um jeito mais leve</title>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="announcement">Frete grátis no DF em compras acima de R$ 499 • Revisão de segurança na retirada</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="SoftBike - página inicial">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="6" cy="17" r="3.5"></circle>
+            <circle cx="18" cy="17" r="3.5"></circle>
+            <path d="M6 17l4-8h3l5 8M8 13h7M9 7h3"></path>
+          </svg>
+        </span>
+        SOFTBIKE
+      </a>
+
+      <nav class="desktop-nav" aria-label="Menu principal">
+        <a class="nav-link active" href="#inicio">Início</a>
+        <a class="nav-link" href="#loja">Loja</a>
+        <a class="nav-link" href="#galeria">Galeria</a>
+        <a class="nav-link" href="#guia">Guia</a>
+        <a class="nav-link" href="#empresa">Empresa</a>
+        <a class="nav-link" href="#documentos">Documentos</a>
+        <a class="nav-link" href="#tabela">Tabela</a>
+        <a class="nav-link" href="#recursos">Recursos</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-secondary" href="#loja">Comprar agora</a>
+        <button class="wishlist-btn" id="open-wishlist" type="button" aria-label="Ver favoritos" data-testid="open-wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+          </svg>
+          <span>Favoritos</span>
+          <span class="wishlist-count" id="wishlist-count" data-testid="wishlist-count">0</span>
+        </button>
+        <button class="icon-button cart-button" id="open-cart" type="button" aria-label="Abrir carrinho">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="20" r="1"></circle>
+            <circle cx="19" cy="20" r="1"></circle>
+            <path d="M3 4h2l2.4 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 8H6"></path>
+          </svg>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu para celular">
+    <a class="nav-link active" href="#inicio">Início</a>
+    <a class="nav-link" href="#loja">Loja</a>
+    <a class="nav-link" href="#galeria">Galeria</a>
+    <a class="nav-link" href="#guia">Guia</a>
+    <a class="nav-link" href="#empresa">Empresa</a>
+    <a class="nav-link" href="#documentos">Documentos</a>
+    <a class="nav-link" href="#tabela">Tabela</a>
+    <a class="nav-link" href="#recursos">Recursos</a>
+  </nav>
+
+  <main id="conteudo">
+    <!-- aqui fica o inicio do site -->
+    <section class="page active" id="inicio" data-route="inicio">
+      <div class="hero">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Desde 2014 · São Paulo</span>
+            <h1>Pedale a cidade de um jeito <span>mais leve.</span></h1>
+            <p>Bicicletas, acessórios e manutenção para transformar deslocamentos em experiências mais simples, sustentáveis e prazerosas.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#loja">Ver bicicletas <span aria-hidden="true">↗</span></a>
+              <a class="btn btn-secondary" href="#empresa">Agendar revisão</a>
+            </div>
+            <div class="hero-proof">
+              <div class="avatar-stack" aria-label="Clientes da comunidade">
+                <span>BR</span><span>JG</span><span>YS</span><span>HL</span>
+              </div>
+              <span><strong>4,9/5</strong> de avaliação da comunidade SoftBike</span>
+            </div>
+            <div class="hero-stats" aria-label="Números da SoftBike">
+              <div class="hero-stat"><strong>10 anos</strong><span>de experiência</span></div>
+              <div class="hero-stat"><strong>3 filiais</strong><span>em Brasília</span></div>
+              <div class="hero-stat"><strong>4,9/5</strong><span>avaliação média</span></div>
+              <div class="hero-stat"><strong>96%</strong><span>recomendam</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container quick-categories" aria-label="Categorias em destaque">
+        <a class="category-card" href="#loja" data-category-link="bike-urbana">
+          <span class="category-number">01 / CIDADE</span>
+          <h3>Urbanas</h3>
+          <p>Leves, ágeis e prontas para a rotina.</p>
+        </a>
+        <a class="category-card" href="#loja" data-category-link="bike-mtb">
+          <span class="category-number">02 / TRILHA</span>
+          <h3>Mountain bikes</h3>
+          <p>Controle para ir além do asfalto.</p>
+        </a>
+        <a class="category-card" href="#loja" data-category-link="bike-speed">
+          <span class="category-number">03 / VELOCIDADE</span>
+          <h3>Speed</h3>
+          <p>Performance em cada quilômetro.</p>
+        </a>
+        <a class="category-card" href="#loja" data-category-link="acessorio">
+          <span class="category-number">04 / ESSENCIAIS</span>
+          <h3>Peças & acessórios</h3>
+          <p>Tudo para pedalar com segurança.</p>
+        </a>
+      </div>
+
+      <section class="sponsors" aria-labelledby="sponsors-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Parceiros oficiais</span>
+              <h2 id="sponsors-title">Marcas que pedalam com a gente.</h2>
+            </div>
+            <p>Quatro campanhas patrocinadas apresentadas na página principal, conforme solicitado no projeto.</p>
+          </div>
+          <div class="sponsor-grid">
+            <a class="sponsor-ad" href="https://bike.shimano.com/" target="_blank" rel="noopener">
+              <div><span>Transmissão oficial</span><strong>SHIMANO</strong></div>
+              <i class="sponsor-icon">S</i>
+            </a>
+            <a class="sponsor-ad" href="https://www.giro.com/" target="_blank" rel="noopener">
+              <div><span>Proteção que inspira</span><strong>GIRO</strong></div>
+              <i class="sponsor-icon">G</i>
+            </a>
+            <a class="sponsor-ad" href="https://www.strava.com/" target="_blank" rel="noopener">
+              <div><span>Conecte seu pedal</span><strong>STRAVA</strong></div>
+              <i class="sponsor-icon">S</i>
+            </a>
+            <a class="sponsor-ad" href="https://www.continental-tires.com/" target="_blank" rel="noopener">
+              <div><span>Aderência total</span><strong>CONTINENTAL</strong></div>
+              <i class="sponsor-icon">C</i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container feature-banner">
+          <div class="feature-banner-copy">
+            <span class="eyebrow">Bike fit SoftBike</span>
+            <h2>A bicicleta certa também precisa vestir você.</h2>
+            <p>Ajustamos altura, posição e pontos de contato para melhorar conforto, controle e rendimento desde o primeiro pedal.</p>
+            <a class="btn btn-primary" href="#empresa">Conhecer a experiência</a>
+          </div>
+          <div class="feature-banner-media">
+            <img
+              src="https://images.unsplash.com/photo-1529422643029-d4585747aaf2?auto=format&amp;fit=crop&amp;w=1200&amp;q=82"
+              alt="Detalhe de uma bicicleta moderna"
+              data-fallback="Bike fit SoftBike">
+          </div>
+        </div>
+      </section>
+
+      <section class="container benefits" aria-label="Benefícios SoftBike">
+        <article class="benefit">
+          <span>01</span>
+          <h3>Escolha assistida</h3>
+          <p>Conversa direta para indicar a bike certa ao seu uso, altura e orçamento.</p>
+        </article>
+        <article class="benefit">
+          <span>02</span>
+          <h3>Montagem especializada</h3>
+          <p>Sua bicicleta sai revisada, regulada e pronta para os primeiros quilômetros.</p>
+        </article>
+        <article class="benefit">
+          <span>03</span>
+          <h3>Pós-venda próximo</h3>
+          <p>Primeiro ajuste gratuito e suporte para dúvidas de manutenção e uso.</p>
+        </article>
+      </section>
+    </section>
+
+    <!-- aqui começa a loja -->
+    <section class="page" id="loja" data-route="loja">
+      <header class="page-intro">
+        <div class="container">
+          <span class="eyebrow">Catálogo SoftBike</span>
+          <h1>Tudo para pedalar melhor, da cidade à trilha.</h1>
+          <p>Encontre bicicletas, equipamentos e componentes para diferentes estilos de pedal. Filtre por categoria ou pesquise pelo produto desejado.</p>
+        </div>
+      </header>
+      <div class="container content-section">
+        <div class="shop-categories" aria-label="Categorias da loja">
+          <a class="shop-category-card" href="#loja" data-category-link="bike-urbana">
+            <span>Cidade</span><strong>Bicicletas urbanas</strong>
+          </a>
+          <a class="shop-category-card" href="#loja" data-category-link="bike-mtb">
+            <span>Aventura</span><strong>Mountain Bike</strong>
+          </a>
+          <a class="shop-category-card" href="#loja" data-category-link="bike-eletrica">
+            <span>Mobilidade</span><strong>Bicicletas elétricas</strong>
+          </a>
+          <a class="shop-category-card" href="#loja" data-category-link="acessorio">
+            <span>Essenciais</span><strong>Acessórios</strong>
+          </a>
+        </div>
+        <div class="shop-toolbar">
+          <div class="filter-chips" aria-label="Filtrar produtos">
+            <button class="filter-chip active" type="button" data-product-filter="todos">Todos</button>
+            <button class="filter-chip" type="button" data-product-filter="bike-urbana">Urbanas</button>
+            <button class="filter-chip" type="button" data-product-filter="bike-mtb">Mountain Bike</button>
+            <button class="filter-chip" type="button" data-product-filter="bike-eletrica">Elétricas</button>
+            <button class="filter-chip" type="button" data-product-filter="acessorio">Acessórios</button>
+            <button class="filter-chip" type="button" data-product-filter="peca">Peças</button>
+          </div>
+          <label class="search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path>
+            </svg>
+            <span class="sr-only">Pesquisar produto</span>
+            <input id="product-search" type="search" placeholder="Buscar no catálogo...">
+          </label>
+        </div>
+        <div class="price-filter" data-testid="price-filter">
+          <span class="price-title">Faixa de preço</span>
+          <div class="price-inputs">
+            <label>
+              <span>Mínimo: <span class="price-value" id="price-min-value">R$ 0</span></span>
+              <input type="range" id="price-min" min="0" max="14000" step="50" value="0" data-testid="price-min" aria-label="Preço mínimo">
+            </label>
+            <label>
+              <span>Máximo: <span class="price-value" id="price-max-value">R$ 14.000</span></span>
+              <input type="range" id="price-max" min="0" max="14000" step="50" value="14000" data-testid="price-max" aria-label="Preço máximo">
+            </label>
+          </div>
+          <button type="button" class="price-reset" id="price-reset" data-testid="price-reset">Limpar faixa</button>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- aqui ficam as fotos -->
+    <section class="page" id="galeria" data-route="galeria">
+      <header class="page-intro">
+        <div class="container">
+          <span class="eyebrow">27 fotografias</span>
+          <h1>Do asfalto à terra, toda rota tem uma história.</h1>
+          <p>Galeria organizada em três colunas no computador, com imagens do mesmo tamanho, filtros e visualização ampliada.</p>
+        </div>
+      </header>
+      <div class="container content-section">
+        <div class="gallery-toolbar" aria-label="Filtrar galeria">
+          <button class="filter-chip active" type="button" data-gallery-filter="todos">Todas (27)</button>
+          <button class="filter-chip" type="button" data-gallery-filter="urbano">Urbano</button>
+          <button class="filter-chip" type="button" data-gallery-filter="trilha">Trilha</button>
+          <button class="filter-chip" type="button" data-gallery-filter="detalhes">Detalhes</button>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- aqui fica o guia -->
+    <section class="page" id="guia" data-route="guia">
+      <header class="page-intro" id="topo-guia">
+        <div class="container">
+          <span class="eyebrow">Guia de pedal</span>
+          <h1>14 capítulos para começar com confiança.</h1>
+          <p>Cada capítulo possui título, parágrafos diferentes e um link de retorno ao início do guia.</p>
+        </div>
+      </header>
+      <div class="container content-section">
+        <nav class="anchor-index" aria-label="Índice dos 14 capítulos">
+          <a href="#capitulo-1">01 Escolha</a>
+          <a href="#capitulo-2">02 Tamanho</a>
+          <a href="#capitulo-3">03 Capacete</a>
+          <a href="#capitulo-4">04 Freios</a>
+          <a href="#capitulo-5">05 Marchas</a>
+          <a href="#capitulo-6">06 Pneus</a>
+          <a href="#capitulo-7">07 Limpeza</a>
+          <a href="#capitulo-8">08 Lubrificação</a>
+          <a href="#capitulo-9">09 Revisão</a>
+          <a href="#capitulo-10">10 Cidade</a>
+          <a href="#capitulo-11">11 Trilha</a>
+          <a href="#capitulo-12">12 Hidratação</a>
+          <a href="#capitulo-13">13 Noite</a>
+          <a href="#capitulo-14">14 Evolução</a>
+        </nav>
+
+        <div class="guide-layout">
+          <article class="guide-chapter" id="capitulo-1">
+            <span class="chapter-number">01</span>
+            <div class="chapter-copy">
+              <h2>Escolha pelo seu caminho, não pela aparência.</h2>
+              <p>Antes de comparar cores ou quantidade de marchas, pense onde você realmente vai pedalar. Uma bicicleta urbana prioriza agilidade e conforto; uma mountain bike oferece controle em pisos irregulares; uma speed transforma energia em velocidade no asfalto.</p>
+              <p>Também considere frequência, distância e espaço para guardar. A melhor primeira bicicleta é aquela que combina com a rotina e convida você a usá-la mais vezes.</p>
+              <a class="back-link" href="#topo-guia">↑ Voltar ao início do guia</a>
+            </div>
+          </article>
+
+          <article class="guide-chapter" id="capitulo-2">
+            <span class="chapter-number">02</span>
+            <div class="chapter-copy">
+              <h2>O tamanho do quadro muda tudo.</h2>
+              <p>Um quadro adequado ajuda a distribuir o peso, alcançar o guidão sem tensão e pedalar com os joelhos alinhados. Altura é um bom ponto de partida, mas medidas de tronco e pernas também influenciam.</p>
+              <p>Na dúvida, teste mais de um tamanho e observe se você mantém os ombros relaxados. Pequenos ajustes de selim e mesa refinam a posição, mas não corrigem um quadro muito grande ou pequeno.</p>
+              <a class="back-link" href="#topo-guia">↑ Voltar ao início do guia</a>
+            </div>
+          </article>
+
+          <article class="guide-chapter" id="capitulo-3">
+            <span class="chapter-number">03</span>
+            <div class="chapter-copy">
+              <h2>Capacete só protege quando está bem ajustado.</h2>
+              <p>Escolha um modelo certificado que fique firme sem apertar. A borda frontal deve permanecer poucos dedos acima das sobrancelhas, e as tiras precisam formar um “V” ao redor das orelhas.</p>
+              <p>Depois de uma queda forte, substitua o capacete mesmo que a parte externa pareça intacta. A estrutura interna pode ter absorvido o impacto e perdido eficiência.</p>
+              <a class="back-link" href="#topo-guia">↑ Voltar ao início do guia</a>
+            </div>
+          </article>
+
+          <article class="guide-chapter" id="capitulo-4">
+            <span class="chapter-number">04</span>
+            <div class="chapter-copy">
+              <h2>Frear bem é modular, não travar.</h2>
+              <p>Use os dois freios de maneira progressiva. O dianteiro entrega mais potência, enquanto o traseiro ajuda a estabilizar. Em curvas, reduza antes de inclinar a bicicleta e mantenha movimentos suaves.</p>
+              <p>Treine em um local seguro para entender a resposta do conjunto. Ruídos, manetes encostando no guidão ou perda de potência são sinais claros de que a revisão não deve esperar.</p>
+              <a class="back-link" href="#topo-guia">↑ Voltar ao início do guia</a>
+            </div>
+          </article>
+
+          <article class="guide-chapter" id="capitulo-5">
+            <span class="chapter-number">05</span>
+            <div class="chapter-copy">
+              <h2>Marchas existem para manter o ritmo.</h2>
+              <p>Troque para uma relação mais leve antes de a subida ficar pesada e use relações mais firmes quando a velocidade aumentar. O objetivo é preservar uma cadência confortável, sem “moer” nem girar em falso.</p>
+              <p>Alivie um pouco a força no pedal durante a troca. Isso reduz ruídos e desgaste, especialmente quando a corrente precisa passar entre coroas ou pinhões distantes.</p>
+              <a class="back-link" href="#topo-guia">↑ Voltar ao início do guia</a>
+            </div>
+          </article>
+
+          <article class="guide-chapter" id="capitulo-6">
+            <span class="chapter-number">06</span>
+            <div class="chapter-copy">
+              <h2>Pressão correta entrega conforto e controle.</h2>
+              <p>A faixa indicada na lateral do pneu é uma referência, não uma regra única. Peso do ciclista, largura do pneu e tipo de piso definem o melhor ponto dentro desse intervalo.</p>
+              <p>Pressão alta demais reduz aderência e transmite impactos; baixa demais aumenta o risco de furo por impacto. Verifique antes de pedais longos e ajuste aos poucos.</p>
+              <a class="back-link" href="#topo-guia">↑ Voltar ao início do guia</a>
+            </div>
+          </article>
+
+          <article class="guide-chapter" id="capitulo-7">
+            <span class="chapter-number">07</span>
+            <div class="chapter-copy">
+              <h2>Limpeza simples evita manutenção cara.</h2>
+              <p>Remova poeira e barro com água de baixa pressão, esponja macia e produto neutro. Jatos fortes podem empurrar sujeira para dentro de rolamentos e retirar a graxa de pontos importantes.</p>
+              <p>Seque a bicicleta e observe trincas, folgas ou cabos danificados. A limpeza também funciona como uma inspeção rápida antes que pequenos problemas cresçam.</p>
+              <a class="back-link" href="#topo-guia">↑ Voltar ao início do guia</a>
+            </div>
+          </article>
+
+          <article class="guide-chapter" id="capitulo-8">
+            <span class="chapter-number">08</span>
+            <div class="chapter-copy">
+              <h2>Lubrificante fica dentro da corrente.</h2>
+              <p>Aplique uma gota em cada elo com a corrente limpa e seca. Gire o pedivela para distribuir, aguarde alguns minutos e retire todo o excesso com um pano.</p>
+              <p>Produto sobrando por fora atrai poeira e forma uma pasta abrasiva. Escolha a fórmula adequada ao clima: versões secas para poeira e úmidas para chuva ou lama.</p>
+              <a class="back-link" href="#topo-guia">↑ Voltar ao início do guia</a>
+            </div>
+          </article>
+
+          <article class="guide-chapter" id="capitulo-9">
+            <span class="chapter-number">09</span>
+            <div class="chapter-copy">
+              <h2>Revisão preventiva devolve tranquilidade.</h2>
+              <p>Antes de sair, aperte os freios, confira pneus e observe se as rodas giram livres. Periodicamente, verifique parafusos, desgaste da corrente e alinhamento das marchas.</p>
+              <p>A frequência depende do uso e das condições do percurso. Quem pedala sob chuva, poeira ou lama precisa encurtar os intervalos e cuidar mais da transmissão.</p>
+              <a class="back-link" href="#topo-guia">↑ Voltar ao início do guia</a>
+            </div>
+          </article>
+
+          <article class="guide-chapter" id="capitulo-10">
+            <span class="chapter-number">10</span>
+            <div class="chapter-copy">
+              <h2>Na cidade, previsibilidade é segurança.</h2>
+              <p>Sinalize mudanças de direção, mantenha uma linha estável e ocupe um espaço visível. Evite costurar entre veículos e redobre a atenção perto de portas estacionadas e cruzamentos.</p>
+              <p>Planeje rotas com menor velocidade e melhor infraestrutura. Alguns minutos a mais podem transformar completamente a qualidade do deslocamento.</p>
+              <a class="back-link" href="#topo-guia">↑ Voltar ao início do guia</a>
+            </div>
+          </article>
+
+          <article class="guide-chapter" id="capitulo-11">
+            <span class="chapter-number">11</span>
+            <div class="chapter-copy">
+              <h2>Na trilha, olhe para onde quer passar.</h2>
+              <p>Mantenha o olhar adiante, braços e pernas levemente flexionados e mãos relaxadas. A bicicleta precisa se mover sob o corpo para acompanhar pedras, raízes e mudanças de inclinação.</p>
+              <p>Comece por rotas compatíveis com sua técnica, pedale acompanhado e leve itens básicos de reparo. Evolução segura nasce da repetição, não da pressa.</p>
+              <a class="back-link" href="#topo-guia">↑ Voltar ao início do guia</a>
+            </div>
+          </article>
+
+          <article class="guide-chapter" id="capitulo-12">
+            <span class="chapter-number">12</span>
+            <div class="chapter-copy">
+              <h2>Hidratação começa antes da sede.</h2>
+              <p>Em pedais curtos, água costuma ser suficiente. Com o aumento da duração, temperatura e intensidade, reposição de carboidratos e eletrólitos pode ajudar a manter o desempenho.</p>
+              <p>Leve alimentos que você já conhece e consuma pequenas porções ao longo do caminho. Testar algo novo em um percurso longo raramente é uma boa ideia.</p>
+              <a class="back-link" href="#topo-guia">↑ Voltar ao início do guia</a>
+            </div>
+          </article>
+
+          <article class="guide-chapter" id="capitulo-13">
+            <span class="chapter-number">13</span>
+            <div class="chapter-copy">
+              <h2>À noite, ser visto vem antes de iluminar.</h2>
+              <p>Use luz branca na frente, vermelha atrás e elementos refletivos em pontos móveis. Uma boa lanterna ilumina o percurso sem ofuscar quem vem no sentido contrário.</p>
+              <p>Carregue as baterias antes de sair e considere uma luz reserva. Reduza a velocidade porque buracos, detritos e animais aparecem com menos antecedência.</p>
+              <a class="back-link" href="#topo-guia">↑ Voltar ao início do guia</a>
+            </div>
+          </article>
+
+          <article class="guide-chapter" id="capitulo-14">
+            <span class="chapter-number">14</span>
+            <div class="chapter-copy">
+              <h2>Consistência vence intensidade isolada.</h2>
+              <p>Aumente distância e esforço gradualmente, intercalando dias leves com descanso. Registrar percursos ajuda a enxergar evolução sem transformar toda saída em competição.</p>
+              <p>Defina metas simples e possíveis: pedalar duas vezes na semana, conhecer uma nova rota ou completar o primeiro percurso longo. O melhor progresso é aquele que você consegue sustentar.</p>
+              <a class="back-link" href="#topo-guia">↑ Voltar ao início do guia</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- aqui fala sobre a empresa -->
+    <section class="page" id="empresa" data-route="empresa">
+      <header class="page-intro">
+        <div class="container">
+          <span class="eyebrow">Sobre a SoftBike</span>
+          <h1>10 anos no segmento de bicicletas, 3 filiais em Brasília.</h1>
+          <p>A SoftBike trabalha com venda de bicicletas, equipamentos de ciclismo e serviços de manutenção. Estamos presentes em Taguatinga, Plano Piloto e Samambaia.</p>
+        </div>
+      </header>
+      <div class="container content-section">
+        <div class="about-grid">
+          <article class="about-card accent">
+            <span class="eyebrow">Nossa essência</span>
+            <h2>Modernidade, confiança, energia e qualidade.</h2>
+            <p>Combinamos o universo esportivo com o lazer. Layout clean e profissional, sem aparência excessivamente genérica: é assim que apresentamos cada bicicleta e cada serviço.</p>
+            <div class="values">
+              <span>Modernidade</span><span>Confiança</span><span>Energia</span><span>Qualidade</span>
+            </div>
+          </article>
+          <article class="about-card">
+            <span class="eyebrow">Nossos públicos</span>
+            <h2>Para quem pedala em qualquer ritmo.</h2>
+            <ul>
+              <li>Ciclistas esportivos</li>
+              <li>Pessoas que utilizam bicicleta casualmente</li>
+              <li>Pessoas interessadas em lazer e mobilidade</li>
+              <li>Iniciantes no ciclismo</li>
+              <li>Usuários que procuram equipamentos e serviços de manutenção</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Briefing oficial do projeto</span>
+            <h2>18 perguntas que orientam o site.</h2>
+          </div>
+          <p>Clique em cada pergunta para abrir a resposta correspondente ao briefing entregue.</p>
+        </div>
+
+        <div class="briefing-list">
+          <details class="briefing-item">
+            <summary><span>01</span>Ramo de atuação da empresa e tempo de mercado</summary>
+            <p class="briefing-answer">A SOFTBIKE atua no segmento de bicicletas há 10 anos. Trabalha com venda de bicicletas, equipamentos de ciclismo e serviços de manutenção.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>02</span>Número de filiais/franquias</summary>
+            <p class="briefing-answer">Atualmente, possui o número de 3 filiais localizadas em Taguatinga, Plano Piloto e Samambaia.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>03</span>Produtos e/ou serviços oferecidos</summary>
+            <p class="briefing-answer">Bicicletas, equipamentos de segurança, equipamento de manutenção, roupa esportiva.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>04</span>Endereço do site atual</summary>
+            <p class="briefing-answer">Não possui site anterior — este é o primeiro site oficial da marca.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>05</span>Vantagens/desvantagens sobre os concorrentes</summary>
+            <p class="briefing-answer"><strong>Caloi</strong> — Vantagens: é a maior rede de distribuição de bicicletas, o que facilita a reposição das peças, caso a bicicleta quebre. Ela também é uma marca que oferece desde modelos baratos até os mais caros. Desvantagens: os modelos mais baratos usam componentes mais simples, precisam de manutenção frequente, além dos preços que costumam ser caros para bicicletas que não exigem manutenção constantemente.<br><br><strong>Oggi Bikes</strong> — Vantagens: o seguro contra roubo é gratuito, tem uma das melhores relações de custo e benefício de bicicletas. Desvantagens: design de bicicletas mais tradicional, não focam muito em bicicletas urbanas ou de lazer.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>06</span>Referências de sites (outras empresas)</summary>
+            <p class="briefing-answer"><a href="https://caloi.com" target="_blank" rel="noopener">https://caloi.com</a> · <a href="https://oggibikes.com.br" target="_blank" rel="noopener">https://oggibikes.com.br</a></p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>07</span>Objetivos a serem alcançados</summary>
+            <p class="briefing-answer">Criar um site moderno, profissional, responsivo e intuitivo que apresente a SOFTBIKE como uma referência para ciclistas esportivos e usuários que utilizam bicicletas para lazer, mobilidade e atividades casuais.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>08</span>Público-alvo</summary>
+            <p class="briefing-answer">Ciclistas esportivos; pessoas que utilizam bicicleta casualmente; pessoas interessadas em lazer e mobilidade; iniciantes no ciclismo; usuários que procuram equipamentos e serviços de manutenção.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>09</span>Conteúdo do site</summary>
+            <p class="briefing-answer">Bicicletas, equipamentos de segurança, equipamento de manutenção, roupa esportiva.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>10</span>Imagem a ser transmitida para os usuários</summary>
+            <p class="briefing-answer">O projeto deve transmitir modernidade, confiança, energia e qualidade, combinando o universo esportivo com o lazer. O layout deve ser clean e profissional, sem aparência excessivamente genérica.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>11</span>Documentação disponível</summary>
+            <p class="briefing-answer"><strong>Manual do proprietário:</strong> já vem com a bicicleta, ele explica como deve calibrar pneus, trocar marcha ou só fazer a manutenção básica da bicicleta. <br><strong>Nota fiscal:</strong> documento da comprovação de compra da bicicleta e onde foi comprada. <br><strong>Certificado de garantia:</strong> documento que garante a cobertura e prazo da troca do produto caso ele apresente defeitos de fabricação.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>12</span>Tecnologias ou linguagens desejadas</summary>
+            <p class="briefing-answer">JavaScript, HTML e CSS.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>13</span>Ferramentas de marketing utilizadas atualmente</summary>
+            <p class="briefing-answer">Protótipo do site pelo Lovable, Base44, além do uso de banners promocionais, produtos em destaque, ofertas, chamadas para ação, redes sociais, campanhas sazonais e conteúdo visual relacionado ao ciclismo.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>14</span>Objeções</summary>
+            <p class="briefing-answer">Não usar rosa choque, marrom e verde tradicionais. Não utilizar Double Struck, Tai Le, Fraktur Bold, Fraktur, Script ou Bold Script como tipografia.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>15</span>Mínimo e máximo de verba disponível para o projeto</summary>
+            <p class="briefing-answer">Mínimo: R$ 5.000 / Máximo: R$ 20.000.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>16</span>Prazo para desenvolvimento e/ou cronograma</summary>
+            <p class="briefing-answer">Início de setembro até dia 14/09/2026.</p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>17</span>Contato</summary>
+            <p class="briefing-answer">SoftBike<br>E-mail: <a href="mailto:softbike@gmail.com">softbike@gmail.com</a><br>Telefone: <a href="tel:+5561966887799">(61) 9 6688-7799</a></p>
+          </details>
+          <details class="briefing-item">
+            <summary><span>18</span>Observações</summary>
+            <p class="briefing-answer">Nenhuma observação adicional foi registrada pelo cliente no briefing.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- aqui ficam os documentos -->
+    <section class="page" id="documentos" data-route="documentos">
+      <header class="page-intro">
+        <div class="container">
+          <span class="eyebrow">Documentação oficial</span>
+          <h1>Documentos que acompanham cada bicicleta.</h1>
+          <p>Todo pedido SoftBike sai acompanhado de três documentos que garantem transparência, segurança e suporte pós-venda.</p>
+        </div>
+      </header>
+      <div class="container content-section">
+        <div class="about-grid">
+          <article class="about-card" data-testid="doc-manual">
+            <span class="eyebrow">Documento 01</span>
+            <h2>Manual do proprietário</h2>
+            <p>Vem junto com cada bicicleta. Explica como calibrar os pneus, trocar as marchas e fazer a manutenção básica sem precisar de conhecimento técnico avançado.</p>
+          </article>
+          <article class="about-card accent" data-testid="doc-nota">
+            <span class="eyebrow">Documento 02</span>
+            <h2>Nota fiscal</h2>
+            <p>Comprovação oficial da compra: registra o modelo adquirido, a filial responsável pela venda e a data do atendimento. É o seu recibo formal.</p>
+          </article>
+          <article class="about-card" data-testid="doc-garantia">
+            <span class="eyebrow">Documento 03</span>
+            <h2>Certificado de garantia</h2>
+            <p>Garante a cobertura e o prazo de troca do produto caso ele apresente defeitos de fabricação. Guarde junto com a nota fiscal.</p>
+          </article>
+        </div>
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Documentação visual</span>
+            <h2>Wireframes das oito páginas do site.</h2>
+          </div>
+          <p>Representações estruturais simplificadas de cada página, para acompanhar a arquitetura de navegação.</p>
+        </div>
+
+        <div class="requirement-note">
+          <span aria-hidden="true">✦</span>
+          <p><strong>Leitura dos wireframes:</strong> tons mais escuros representam imagens e áreas de destaque; tons claros representam blocos de texto, cards e controles.</p>
+        </div>
+
+        <div class="wireframe-grid">
+          <article class="wireframe-card">
+            <div class="wireframe-title"><h3>01. Início</h3><span>Home + patrocinadores</span></div>
+            <div class="wireframe">
+              <div class="wf-bar"><i class="wf-dot"></i><i class="wf-dot"></i><i class="wf-dot"></i></div>
+              <div class="wf-nav"></div>
+              <div class="wf-hero"><div class="wf-block"></div><div class="wf-image"></div></div>
+              <div class="wf-row"><div class="wf-block"></div><div class="wf-block"></div><div class="wf-block"></div></div>
+              <div class="wf-row"><div class="wf-line"></div><div class="wf-line"></div><div class="wf-line"></div></div>
+            </div>
+          </article>
+
+          <article class="wireframe-card">
+            <div class="wireframe-title"><h3>02. Loja</h3><span>Filtros + catálogo</span></div>
+            <div class="wireframe">
+              <div class="wf-bar"><i class="wf-dot"></i><i class="wf-dot"></i><i class="wf-dot"></i></div>
+              <div class="wf-nav"></div>
+              <div class="wf-line"></div>
+              <div class="wf-row"><div class="wf-image"></div><div class="wf-image"></div><div class="wf-image"></div></div>
+              <div class="wf-row"><div class="wf-image"></div><div class="wf-image"></div><div class="wf-image"></div></div>
+            </div>
+          </article>
+
+          <article class="wireframe-card">
+            <div class="wireframe-title"><h3>03. Galeria</h3><span>27 fotos em 3 colunas</span></div>
+            <div class="wireframe">
+              <div class="wf-bar"><i class="wf-dot"></i><i class="wf-dot"></i><i class="wf-dot"></i></div>
+              <div class="wf-nav"></div>
+              <div class="wf-row"><div class="wf-image"></div><div class="wf-image"></div><div class="wf-image"></div></div>
+              <div class="wf-row"><div class="wf-image"></div><div class="wf-image"></div><div class="wf-image"></div></div>
+              <div class="wf-row"><div class="wf-image"></div><div class="wf-image"></div><div class="wf-image"></div></div>
+            </div>
+          </article>
+
+          <article class="wireframe-card">
+            <div class="wireframe-title"><h3>04. Guia</h3><span>Índice + 14 textos</span></div>
+            <div class="wireframe">
+              <div class="wf-bar"><i class="wf-dot"></i><i class="wf-dot"></i><i class="wf-dot"></i></div>
+              <div class="wf-nav"></div>
+              <div class="wf-line"></div>
+              <div class="wf-list">
+                <div class="wf-line"></div><div class="wf-line"></div>
+                <div class="wf-line"></div><div class="wf-line"></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="wireframe-card">
+            <div class="wireframe-title"><h3>05. Empresa</h3><span>Institucional + briefing</span></div>
+            <div class="wireframe">
+              <div class="wf-bar"><i class="wf-dot"></i><i class="wf-dot"></i><i class="wf-dot"></i></div>
+              <div class="wf-nav"></div>
+              <div class="wf-hero"><div class="wf-block"></div><div class="wf-block"></div></div>
+              <div class="wf-columns"><div class="wf-list"><div class="wf-line"></div><div class="wf-line"></div><div class="wf-line"></div></div><div class="wf-list"><div class="wf-line"></div><div class="wf-line"></div><div class="wf-line"></div><div class="wf-line"></div></div></div>
+            </div>
+          </article>
+
+          <article class="wireframe-card">
+            <div class="wireframe-title"><h3>06. Documentos</h3><span>Grade de wireframes</span></div>
+            <div class="wireframe">
+              <div class="wf-bar"><i class="wf-dot"></i><i class="wf-dot"></i><i class="wf-dot"></i></div>
+              <div class="wf-nav"></div>
+              <div class="wf-hero"><div class="wf-image"></div><div class="wf-image"></div></div>
+              <div class="wf-hero"><div class="wf-image"></div><div class="wf-image"></div></div>
+            </div>
+          </article>
+
+          <article class="wireframe-card">
+            <div class="wireframe-title"><h3>07. Tabela</h3><span>5 colunas × 15 linhas</span></div>
+            <div class="wireframe">
+              <div class="wf-bar"><i class="wf-dot"></i><i class="wf-dot"></i><i class="wf-dot"></i></div>
+              <div class="wf-nav"></div>
+              <div class="wf-table">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="wireframe-card">
+            <div class="wireframe-title"><h3>08. Recursos</h3><span>Listas + links externos</span></div>
+            <div class="wireframe">
+              <div class="wf-bar"><i class="wf-dot"></i><i class="wf-dot"></i><i class="wf-dot"></i></div>
+              <div class="wf-nav"></div>
+              <div class="wf-row"><div class="wf-list"><div class="wf-line"></div><div class="wf-line"></div><div class="wf-line"></div></div><div class="wf-list"><div class="wf-line"></div><div class="wf-line"></div><div class="wf-line"></div></div><div class="wf-list"><div class="wf-line"></div><div class="wf-line"></div><div class="wf-line"></div></div></div>
+              <div class="wf-hero"><div class="wf-block"></div><div class="wf-block"></div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- aqui fica a tabela -->
+    <section class="page" id="tabela" data-route="tabela">
+      <header class="page-intro">
+        <div class="container">
+          <span class="eyebrow">Análise competitiva</span>
+          <h1>SoftBike ao lado dos principais concorrentes.</h1>
+          <p>Uma comparação direta com Caloi e Oggi Bikes, seguida da tabela de estoque demonstrativo com cinco colunas e quinze linhas.</p>
+        </div>
+      </header>
+      <div class="container content-section">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Item 05 do briefing</span>
+            <h2>Vantagens e desvantagens dos concorrentes.</h2>
+          </div>
+          <p>Baseado no briefing oficial entregue pelo cliente.</p>
+        </div>
+
+        <div class="table-wrapper" data-testid="competitor-table">
+          <table class="inventory-table">
+            <caption>SoftBike × Caloi × Oggi Bikes</caption>
+            <thead>
+              <tr>
+                <th>Marca</th>
+                <th>Vantagens</th>
+                <th>Desvantagens</th>
+                <th>Foco</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>SoftBike</strong></td>
+                <td>10 anos de mercado, 3 filiais em Brasília (Taguatinga, Plano Piloto e Samambaia), atendimento próximo, curadoria de produtos e serviços de manutenção integrados.</td>
+                <td>Marca regional em processo de expansão fora do DF.</td>
+                <td>Esporte + lazer + mobilidade urbana</td>
+              </tr>
+              <tr>
+                <td><strong>Caloi</strong></td>
+                <td>Maior rede de distribuição de bicicletas do país, o que facilita reposição de peças. Portfólio amplo: dos modelos baratos aos mais caros.</td>
+                <td>Modelos mais baratos usam componentes simples e precisam de manutenção frequente. Preços altos em bikes que não pedem manutenção constante.</td>
+                <td>Cobertura nacional ampla</td>
+              </tr>
+              <tr>
+                <td><strong>Oggi Bikes</strong></td>
+                <td>Seguro contra roubo gratuito e uma das melhores relações custo-benefício do segmento.</td>
+                <td>Design de bicicletas mais tradicional; foco menor em bicicletas urbanas ou de lazer.</td>
+                <td>Performance esportiva tradicional</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Estoque demonstrativo</span>
+            <h2>Uma tabela pensada para ensinar estrutura.</h2>
+          </div>
+          <p>São cinco colunas e quinze linhas de dados, com cinco mesclagens de colunas, cinco de linhas e preenchimentos variados.</p>
+        </div>
+
+        <div class="table-summary">
+          <article class="summary-card"><small>Produtos ativos</small><strong>15</strong></article>
+          <article class="summary-card"><small>Categorias</small><strong>05</strong></article>
+          <article class="summary-card"><small>Disponibilidade</small><strong>86%</strong></article>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="inventory-table">
+            <caption>Catálogo SoftBike • Estrutura acadêmica de exemplo</caption>
+            <thead>
+              <tr>
+                <th>Categoria</th>
+                <th>Produto</th>
+                <th>Tamanho / detalhe</th>
+                <th>Preço</th>
+                <th>Disponibilidade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="4">Bicicletas</td>
+                <td>Soft Urban One</td>
+                <td>P / M / G</td>
+                <td>R$ 3.490</td>
+                <td>Em estoque</td>
+              </tr>
+              <tr>
+                <td colspan="2">Urban Duo • quadro baixo ajustável</td>
+                <td>R$ 3.890</td>
+                <td>Em estoque</td>
+              </tr>
+              <tr>
+                <td>Trail Explorer 29</td>
+                <td>M / G</td>
+                <td>R$ 5.290</td>
+                <td>Últimas 3</td>
+              </tr>
+              <tr>
+                <td colspan="2">Carbon Road • edição performance</td>
+                <td>R$ 12.900</td>
+                <td>Sob encomenda</td>
+              </tr>
+
+              <tr>
+                <td rowspan="4">Componentes</td>
+                <td>Pedivela Motion</td>
+                <td>170 mm</td>
+                <td>R$ 689</td>
+                <td>Em estoque</td>
+              </tr>
+              <tr>
+                <td colspan="2">Kit transmissão completo • 12 velocidades</td>
+                <td>R$ 2.490</td>
+                <td>Últimas 5</td>
+              </tr>
+              <tr>
+                <td>Par de pedais Grip</td>
+                <td>Plataforma</td>
+                <td>R$ 249</td>
+                <td>Em estoque</td>
+              </tr>
+              <tr>
+                <td>Pneu Terra 29</td>
+                <td>29 × 2.25</td>
+                <td>R$ 319</td>
+                <td>Últimas 8</td>
+              </tr>
+
+              <tr>
+                <td rowspan="3">Acessórios</td>
+                <td>Capacete Flow</td>
+                <td>M / G</td>
+                <td>R$ 429</td>
+                <td>Em estoque</td>
+              </tr>
+              <tr>
+                <td colspan="2">Kit segurança • luzes + refletivos</td>
+                <td>R$ 199</td>
+                <td>Em estoque</td>
+              </tr>
+              <tr>
+                <td>Bolsa Frame Mini</td>
+                <td>1,2 litro</td>
+                <td>R$ 159</td>
+                <td>Últimas 4</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">Serviços</td>
+                <td>Revisão Essencial</td>
+                <td>Até 90 min</td>
+                <td>R$ 180</td>
+                <td>Agendamento</td>
+              </tr>
+              <tr>
+                <td>Revisão Completa</td>
+                <td>Até 1 dia</td>
+                <td>R$ 390</td>
+                <td>Agendamento</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">Experiências</td>
+                <td colspan="2">Bike fit + revisão de posição</td>
+                <td>R$ 320</td>
+                <td>Agenda aberta</td>
+              </tr>
+              <tr>
+                <td colspan="2">Pedal guiado de iniciação • grupo de até 6</td>
+                <td>R$ 90</td>
+                <td>Sábados</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- aqui ficam as listas e os links -->
+    <section class="page" id="recursos" data-route="recursos">
+      <header class="page-intro">
+        <div class="container">
+          <span class="eyebrow">Laboratório HTML</span>
+          <h1>Listas, formatações e boas fontes externas.</h1>
+          <p>Uma página didática para demonstrar diferentes tipos de listas, estilos de texto e dez links externos.</p>
+        </div>
+      </header>
+      <div class="container content-section">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Tipos de lista</span>
+            <h2>Uma estrutura para cada informação.</h2>
+          </div>
+          <p>Exemplos com marcadores, números, letras, algarismos romanos, descrição, níveis e caixas de seleção.</p>
+        </div>
+
+        <div class="resources-grid">
+          <article class="resource-card">
+            <h3>Lista não ordenada</h3>
+            <ul>
+              <li>Capacete certificado</li>
+              <li>Garrafa de água</li>
+              <li>Kit de reparo</li>
+              <li>Luzes dianteira e traseira</li>
+            </ul>
+          </article>
+
+          <article class="resource-card">
+            <h3>Lista por letras maiúsculas</h3>
+            <ol type="A">
+              <li>Conferir os pneus</li>
+              <li>Testar os freios</li>
+              <li>Checar as luzes</li>
+              <li>Planejar a rota</li>
+            </ol>
+          </article>
+
+          <article class="resource-card">
+            <h3>Algarismos romanos</h3>
+            <ol type="I">
+              <li>Aquecimento</li>
+              <li>Parte principal</li>
+              <li>Volta à calma</li>
+              <li>Alongamento leve</li>
+            </ol>
+          </article>
+
+          <article class="resource-card">
+            <h3>Letras minúsculas e início 3</h3>
+            <ol type="a" start="3">
+              <li>Escolher o terreno</li>
+              <li>Ajustar a pressão</li>
+              <li>Definir o ritmo</li>
+            </ol>
+          </article>
+
+          <article class="resource-card">
+            <h3>Lista invertida</h3>
+            <ol reversed start="4">
+              <li>Guardar a bicicleta</li>
+              <li>Secar a transmissão</li>
+              <li>Remover a sujeira</li>
+              <li>Separar os materiais</li>
+            </ol>
+          </article>
+
+          <article class="resource-card">
+            <h3>Lista de descrição</h3>
+            <dl>
+              <dt>Cadência</dt><dd>Quantidade de rotações do pedal por minuto.</dd>
+              <dt>Relação</dt><dd>Combinação entre coroa e pinhão utilizada.</dd>
+            </dl>
+          </article>
+
+          <article class="resource-card">
+            <h3>Lista em níveis</h3>
+            <ul>
+              <li>Bicicleta
+                <ul>
+                  <li>Quadro</li>
+                  <li>Transmissão</li>
+                  <li>Rodas</li>
+                </ul>
+              </li>
+              <li>Equipamentos pessoais</li>
+            </ul>
+          </article>
+
+          <article class="resource-card">
+            <h3>Checklist interativo</h3>
+            <ul class="check-list">
+              <li><label><input type="checkbox"> Capacete ajustado</label></li>
+              <li><label><input type="checkbox"> Água separada</label></li>
+              <li><label><input type="checkbox"> Celular carregado</label></li>
+              <li><label><input type="checkbox"> Rota compartilhada</label></li>
+            </ul>
+          </article>
+
+          <article class="resource-card">
+            <h3>Números com início 5</h3>
+            <ol start="5">
+              <li>Manter a linha</li>
+              <li>Sinalizar a curva</li>
+              <li>Reduzir antes de frear</li>
+              <li>Respeitar o ritmo do grupo</li>
+            </ol>
+          </article>
+        </div>
+
+        <div class="format-lab">
+          <article class="format-card">
+            <span class="eyebrow">Formatações</span>
+            <h2>Texto também cria ritmo visual.</h2>
+            <p><strong>Negrito para importância</strong>, <em>itálico para ênfase</em>, <u>sublinhado para destaque</u> e <s>taxado para informação removida</s>.</p>
+            <p>Em medidas, podemos escrever 29 × 2<sup>1</sup> ou representar H<sub>2</sub>O em uma orientação de hidratação.</p>
+            <hr>
+            <blockquote>“A melhor bicicleta é aquela que você realmente usa.”</blockquote>
+          </article>
+          <article class="format-card">
+            <span class="eyebrow">Famílias e tamanhos</span>
+            <div class="font-samples">
+              <p>Georgia traz uma voz editorial e clássica.</p>
+              <p>Courier New lembra documentação e código.</p>
+              <p>Arial Black cria títulos de forte impacto.</p>
+            </div>
+            <hr>
+            <h1>Título H1</h1>
+            <h2>Título H2</h2>
+            <h3>Título H3</h3>
+            <p>Os níveis estabelecem hierarquia, facilitam a leitura e melhoram a organização sem depender apenas de cor.</p>
+          </article>
+        </div>
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">10 sites externos</span>
+            <h2>Continue explorando.</h2>
+          </div>
+          <p>Todos os links abrem uma nova guia e utilizam atributos de segurança apropriados.</p>
+        </div>
+        <div class="external-links">
+          <a class="external-card" href="https://www.uci.org/" target="_blank" rel="noopener"><div><span>Organização mundial</span><strong>UCI</strong></div><b>↗</b></a>
+          <a class="external-card" href="https://www.strava.com/" target="_blank" rel="noopener"><div><span>Rotas e comunidade</span><strong>Strava</strong></div><b>↗</b></a>
+          <a class="external-card" href="https://bike.shimano.com/" target="_blank" rel="noopener"><div><span>Componentes</span><strong>Shimano</strong></div><b>↗</b></a>
+          <a class="external-card" href="https://www.sram.com/" target="_blank" rel="noopener"><div><span>Transmissão e freios</span><strong>SRAM</strong></div><b>↗</b></a>
+          <a class="external-card" href="https://www.trekbikes.com/" target="_blank" rel="noopener"><div><span>Bicicletas</span><strong>Trek</strong></div><b>↗</b></a>
+          <a class="external-card" href="https://www.specialized.com/" target="_blank" rel="noopener"><div><span>Performance</span><strong>Specialized</strong></div><b>↗</b></a>
+          <a class="external-card" href="https://www.cannondale.com/" target="_blank" rel="noopener"><div><span>Inovação</span><strong>Cannondale</strong></div><b>↗</b></a>
+          <a class="external-card" href="https://www.scott-sports.com/" target="_blank" rel="noopener"><div><span>Esporte e aventura</span><strong>Scott</strong></div><b>↗</b></a>
+          <a class="external-card" href="https://caloi.com/" target="_blank" rel="noopener"><div><span>Ciclismo brasileiro</span><strong>Caloi</strong></div><b>↗</b></a>
+          <a class="external-card" href="https://bikepacking.com/" target="_blank" rel="noopener"><div><span>Viagens sobre duas rodas</span><strong>Bikepacking</strong></div><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-about">
+        <a class="brand" href="#inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="6" cy="17" r="3.5"></circle><circle cx="18" cy="17" r="3.5"></circle><path d="M6 17l4-8h3l5 8M8 13h7M9 7h3"></path>
+            </svg>
+          </span>
+          SOFTBIKE
+        </a>
+        <p>Loja acadêmica de bicicletas, peças e experiências criada para tornar o ciclismo mais simples, próximo e inspirador.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Navegue</h3>
+        <a href="#loja">Loja</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#guia">Guia</a>
+        <a href="#empresa">Empresa</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contato demonstrativo</h3>
+        <p>Brasília • Distrito Federal</p>
+        <p>(61) 3333-2026</p>
+        <p>oi@softbike.com.br</p>
+      </div>
+    </div>
+    <div class="container academic-footer">
+      <p><strong>Curso:</strong> Desenhista de Produtos Gráficos - Web Design • <strong>Disciplina:</strong> Desenvolvimento Web • <strong>Turma:</strong> 2026 / Grupo 5</p>
+      <!-- falta colocar o sobrenome deles depois -->
+      <p><strong>Integrantes:</strong> Breno • João Gabriel Souto Guimarães de Souza • Yasmin • Heloisa</p>
+    </div>
+  </footer>
+
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-labelledby="cart-title">
+    <div class="drawer-header">
+      <div>
+        <span class="eyebrow">Seu pedido</span>
+        <h2 id="cart-title">Carrinho</h2>
+      </div>
+      <button class="icon-button" id="close-cart" type="button" aria-label="Fechar carrinho">×</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="drawer-footer">
+      <div class="coupon-block">
+        <input type="text" id="coupon-input" placeholder="Cupom (ex: PEDAL10)" data-testid="coupon-input" aria-label="Cupom de desconto" maxlength="16" autocomplete="off">
+        <button type="button" id="apply-coupon" data-testid="apply-coupon">Aplicar</button>
+      </div>
+      <div class="coupon-hint">
+        Cupons acadêmicos: <code>PEDAL10</code> (10% off) · <code>BIKE20</code> (20% off) · <code>SOFT50</code> (R$ 50 off)
+      </div>
+      <div id="coupon-applied-line"></div>
+      <div class="drawer-line"><span>Subtotal</span><span id="cart-subtotal" data-testid="cart-subtotal">R$ 0,00</span></div>
+      <div class="drawer-line discount" id="cart-discount-line"><span id="cart-discount-label">Desconto</span><span id="cart-discount" data-testid="cart-discount">− R$ 0,00</span></div>
+      <div class="drawer-total"><span>Total estimado</span><strong id="cart-total">R$ 0,00</strong></div>
+      <button class="btn btn-primary" id="checkout-button" type="button">Finalizar interesse</button>
+      <button class="share-wishlist" id="share-wishlist" type="button" data-testid="share-wishlist" aria-label="Compartilhar meus favoritos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line>
+        </svg>
+        Compartilhar meus favoritos
+      </button>
+    </div>
+  </aside>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Foto ampliada">
+    <div class="lightbox-content">
+      <button class="icon-button lightbox-close" id="lightbox-close" type="button" aria-label="Fechar foto">×</button>
+      <img id="lightbox-image" src="" alt="">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
