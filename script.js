@@ -1,53 +1,50 @@
 /*DADOS DO SITE*/
 var produtos = [
-  {
-    id: 1,
-    nome: "Bicicleta Urbana Soft Urban One",
-    categoria: "bike-urbana",
-    tipo: "Bicicleta urbana",
-    preco: 3490,
-    imagem: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    id: 2,
-    nome: "Mountain Bike Trail Explorer",
-    categoria: "bike-mtb",
-    tipo: "Mountain bike",
-    preco: 5290,
-    imagem: "https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    id: 3,
-    nome: "Bicicleta Elétrica City Move",
-    categoria: "bike-eletrica",
-    tipo: "Bicicleta elétrica",
-    preco: 7917,
-    imagem: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    id: 4,
-    nome: "Capacete Flow",
-    categoria: "acessorio",
-    tipo: "Acessório",
-    preco: 429,
-    imagem: "https://images.unsplash.com/photo-1557687790-902ede7ab58c?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    id: 5,
-    nome: "Kit de luzes SoftBike",
-    categoria: "acessorio",
-    tipo: "Acessório",
-    preco: 199,
-    imagem: "https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    id: 6,
-    nome: "Pneu Terra 29",
-    categoria: "peca",
-    tipo: "Peça",
-    preco: 319,
-    imagem: "https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=900&q=80"
-  }
+  { id: 1, nome: "E-bike Urbana Compact", categoria: "bike-eletrica", tipo: "Bicicleta elétrica", preco: 4990, imagem: "src/produtos/produto-01.jpg" },
+  { id: 2, nome: "E-bike Urbana Classic", categoria: "bike-eletrica", tipo: "Bicicleta elétrica", preco: 5290, imagem: "src/produtos/produto-02.jpg" },
+  { id: 3, nome: "E-bike Fat City", categoria: "bike-eletrica", tipo: "Bicicleta elétrica", preco: 6490, imagem: "src/produtos/produto-03.jpg" },
+  { id: 4, nome: "Fat Bike GT 26", categoria: "bike-mtb", tipo: "Mountain bike", preco: 3890, imagem: "src/produtos/produto-04.jpg" },
+  { id: 5, nome: "Mountain Bike Advanced 29", categoria: "bike-mtb", tipo: "Mountain bike", preco: 3290, imagem: "src/produtos/produto-05.jpg" },
+  { id: 6, nome: "Fat Bike Desert", categoria: "bike-mtb", tipo: "Mountain bike", preco: 4190, imagem: "src/produtos/produto-06.jpg" },
+  { id: 7, nome: "Mountain Bike XC Pro", categoria: "bike-mtb", tipo: "Mountain bike", preco: 4590, imagem: "src/produtos/produto-07.jpg" },
+  { id: 8, nome: "E-bike Fat Adventure", categoria: "bike-eletrica", tipo: "Bicicleta elétrica", preco: 7890, imagem: "src/produtos/produto-08.jpg" },
+  { id: 9, nome: "E-bike Urbana Cargo", categoria: "bike-eletrica", tipo: "Bicicleta elétrica", preco: 6990, imagem: "src/produtos/produto-09.jpg" },
+  { id: 10, nome: "E-bike Trail GT20", categoria: "bike-eletrica", tipo: "Bicicleta elétrica", preco: 8290, imagem: "src/produtos/produto-10.jpg" },
+  { id: 11, nome: "E-bike Urbana V8", categoria: "bike-eletrica", tipo: "Bicicleta elétrica", preco: 7490, imagem: "src/produtos/produto-11.jpg" },
+  { id: 12, nome: "Mountain Bike Sport 29", categoria: "bike-mtb", tipo: "Mountain bike", preco: 2890, imagem: "src/produtos/produto-12.jpg" },
+  { id: 13, nome: "Mountain Bike Sport Orange", categoria: "bike-mtb", tipo: "Mountain bike", preco: 2790, imagem: "src/produtos/produto-13.jpg" },
+  { id: 14, nome: "Fat Bike Snow White", categoria: "bike-mtb", tipo: "Mountain bike", preco: 3990, imagem: "src/produtos/produto-14.jpg" },
+  { id: 15, nome: "Mountain Bike Trail White", categoria: "bike-mtb", tipo: "Mountain bike", preco: 3190, imagem: "src/produtos/produto-15.jpg" },
+  { id: 16, nome: "Mountain Bike Urban Gray", categoria: "bike-urbana", tipo: "Bicicleta urbana", preco: 2990, imagem: "src/produtos/produto-16.jpg" },
+  { id: 17, nome: "Bicicleta Infantil Balance", categoria: "bike-urbana", tipo: "Bicicleta infantil", preco: 690, imagem: "src/produtos/produto-17.jpg" },
+  { id: 18, nome: "Mountain Bike Neon", categoria: "bike-mtb", tipo: "Mountain bike", preco: 2690, imagem: "src/produtos/produto-18.jpg" },
+  { id: 19, nome: "Mountain Bike Sport Red", categoria: "bike-mtb", tipo: "Mountain bike", preco: 2790, imagem: "src/produtos/produto-19.jpg" },
+  { id: 20, nome: "Fat Bike Desert Pro", categoria: "bike-mtb", tipo: "Mountain bike", preco: 4290, imagem: "src/produtos/produto-20.jpg" },
+  { id: 21, nome: "Mountain Bike Carbon Yellow", categoria: "bike-mtb", tipo: "Mountain bike", preco: 5890, imagem: "src/produtos/produto-21.jpg" },
+  { id: 22, nome: "Fat Bike Sand", categoria: "bike-mtb", tipo: "Mountain bike", preco: 4190, imagem: "src/produtos/produto-22.jpg" },
+  { id: 23, nome: "Mountain Bike Purple", categoria: "bike-mtb", tipo: "Mountain bike", preco: 2990, imagem: "src/produtos/produto-23.jpg" },
+  { id: 24, nome: "Enfeite de Guidão Patinho", categoria: "acessorio", tipo: "Acessório", preco: 59, imagem: "src/produtos/produto-24.jpg" },
+  { id: 25, nome: "Kit Refletor Laranja", categoria: "acessorio", tipo: "Acessório", preco: 39, imagem: "src/produtos/produto-25.jpg" },
+  { id: 26, nome: "Lanterna Traseira com Controle", categoria: "acessorio", tipo: "Acessório", preco: 189, imagem: "src/produtos/produto-26.jpg" },
+  { id: 27, nome: "Suporte Veicular para Bicicletas", categoria: "acessorio", tipo: "Acessório", preco: 499, imagem: "src/produtos/produto-27.jpg" },
+  { id: 28, nome: "Bermuda de Ciclismo", categoria: "acessorio", tipo: "Vestuário", preco: 179, imagem: "src/produtos/produto-28.jpg" },
+  { id: 29, nome: "Camisa de Ciclismo Black", categoria: "acessorio", tipo: "Vestuário", preco: 219, imagem: "src/produtos/produto-29.jpg" },
+  { id: 30, nome: "Kit Proteção Infantil Unicórnio", categoria: "acessorio", tipo: "Acessório", preco: 249, imagem: "src/produtos/produto-30.jpg" },
+  { id: 31, nome: "Kit Proteção Infantil Aranha", categoria: "acessorio", tipo: "Acessório", preco: 249, imagem: "src/produtos/produto-31.jpg" },
+  { id: 32, nome: "Garrafa SoftBike 750 ml", categoria: "acessorio", tipo: "Acessório", preco: 69, imagem: "src/produtos/produto-32.jpg" },
+  { id: 33, nome: "Cadeirinha Infantil Rosa", categoria: "acessorio", tipo: "Acessório", preco: 289, imagem: "src/produtos/produto-33.jpg" },
+  { id: 34, nome: "Cadeirinha Infantil Confort", categoria: "acessorio", tipo: "Acessório", preco: 319, imagem: "src/produtos/produto-34.jpg" },
+  { id: 35, nome: "Caixa de Som Portátil", categoria: "acessorio", tipo: "Acessório", preco: 199, imagem: "src/produtos/produto-35.jpg" },
+  { id: 36, nome: "Kit Acessórios para Bicicleta", categoria: "acessorio", tipo: "Acessório", preco: 299, imagem: "src/produtos/produto-36.jpg" },
+  { id: 37, nome: "Camisa de Ciclismo Manga Longa", categoria: "acessorio", tipo: "Vestuário", preco: 259, imagem: "src/produtos/produto-37.jpg" },
+  { id: 38, nome: "Luva de Ciclismo Kode", categoria: "acessorio", tipo: "Vestuário", preco: 99, imagem: "src/produtos/produto-38.jpg" },
+  { id: 39, nome: "Comando Elétrico de Guidão", categoria: "peca", tipo: "Peça", preco: 149, imagem: "src/produtos/produto-39.jpg" },
+  { id: 40, nome: "Garfo de Suspensão 29", categoria: "peca", tipo: "Peça", preco: 1290, imagem: "src/produtos/produto-40.jpg" },
+  { id: 41, nome: "Aro Alumínio 29", categoria: "peca", tipo: "Peça", preco: 249, imagem: "src/produtos/produto-41.jpg" },
+  { id: 42, nome: "Par de Cubos para Disco", categoria: "peca", tipo: "Peça", preco: 399, imagem: "src/produtos/produto-42.jpg" },
+  { id: 43, nome: "Manopla Comfort Verde", categoria: "peca", tipo: "Peça", preco: 79, imagem: "src/produtos/produto-43.jpg" },
+  { id: 44, nome: "Acelerador para E-bike", categoria: "peca", tipo: "Peça", preco: 169, imagem: "src/produtos/produto-44.jpg" },
+  { id: 45, nome: "Cesta Dianteira Azul", categoria: "acessorio", tipo: "Acessório", preco: 159, imagem: "src/produtos/produto-45.jpg" }
 ];
 
 var fotos = [

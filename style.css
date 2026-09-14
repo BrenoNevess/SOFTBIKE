@@ -747,7 +747,7 @@ img {
 
 .product-image {
   aspect-ratio: 4 / 3;
-  background: var(--surface-light);
+  background: #fff;
 }
 
 .product-image img,
@@ -758,6 +758,7 @@ img {
 }
 
 .product-image img {
+  object-fit: contain;
   transition: transform 0.45s ease;
 }
 
