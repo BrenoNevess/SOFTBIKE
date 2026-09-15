@@ -10,8 +10,10 @@
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
+  <!-- Aviso superior -->
   <div class="announcement">Frete grátis no DF em compras acima de R$ 499 • Revisão de segurança na retirada</div>
 
+  <!-- Cabeçalho -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="SoftBike - página inicial">
@@ -62,6 +64,7 @@
     </div>
   </header>
 
+  <!-- Menu mobile -->
   <nav class="mobile-nav" id="mobile-nav" aria-label="Menu para celular">
     <a class="nav-link active" href="#inicio">Início</a>
     <a class="nav-link" href="#loja">Loja</a>
@@ -74,12 +77,12 @@
   </nav>
 
   <main id="conteudo">
-    
+    <!-- Aba Início -->
     <section class="page active" id="inicio" data-route="inicio">
       <div class="hero">
         <div class="hero-grid">
           <div class="hero-copy">
-            <span class="eyebrow">Desde 2014 · São Paulo</span>
+            <span class="eyebrow">Desde 2016 · Brasília</span>
             <h1>Pedale a cidade de um jeito <span>mais leve.</span></h1>
             <p>Bicicletas, acessórios e manutenção para transformar deslocamentos em experiências mais simples, sustentáveis e prazerosas.</p>
             <div class="hero-actions">
@@ -191,7 +194,7 @@
       </section>
     </section>
 
-    
+    <!-- Aba Loja -->
     <section class="page" id="loja" data-route="loja">
       <header class="page-intro">
         <div class="container">
@@ -250,7 +253,7 @@
       </div>
     </section>
 
-    
+    <!-- Aba Galeria -->
     <section class="page" id="galeria" data-route="galeria">
       <header class="page-intro">
         <div class="container">
@@ -270,7 +273,7 @@
       </div>
     </section>
 
-    
+    <!-- Aba Guia -->
     <section class="page" id="guia" data-route="guia">
       <header class="page-intro" id="topo-guia">
         <div class="container">
@@ -441,7 +444,7 @@
       </div>
     </section>
 
-    
+    <!-- Aba Empresa -->
     <section class="page" id="empresa" data-route="empresa">
       <header class="page-intro">
         <div class="container">
@@ -558,7 +561,7 @@
       </div>
     </section>
 
-    
+    <!-- Aba Documentos -->
     <section class="page" id="documentos" data-route="documentos">
       <header class="page-intro">
         <div class="container">
@@ -659,7 +662,7 @@
       </div>
     </section>
 
-    
+    <!-- Aba Tabela -->
     <section class="page" id="tabela" data-route="tabela">
       <header class="page-intro">
         <div class="container">
@@ -837,7 +840,7 @@
       </div>
     </section>
 
-    
+    <!-- Aba Recursos -->
     <section class="page" id="recursos" data-route="recursos">
       <header class="page-intro">
         <div class="container">
@@ -995,6 +998,7 @@
     </section>
   </main>
 
+  <!-- Rodapé -->
   <footer class="site-footer">
     <div class="container footer-top">
       <div class="footer-about">
@@ -1028,6 +1032,7 @@
     </div>
   </footer>
 
+  <!-- Carrinho -->
   <div class="drawer-overlay" id="drawer-overlay"></div>
   <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-labelledby="cart-title">
     <div class="drawer-header">
@@ -1051,15 +1056,11 @@
       <div class="drawer-line discount" id="cart-discount-line"><span id="cart-discount-label">Desconto</span><span id="cart-discount" data-testid="cart-discount">− R$ 0,00</span></div>
       <div class="drawer-total"><span>Total estimado</span><strong id="cart-total">R$ 0,00</strong></div>
       <button class="btn btn-primary" id="checkout-button" type="button">Finalizar interesse</button>
-      <button class="share-wishlist" id="share-wishlist" type="button" data-testid="share-wishlist" aria-label="Compartilhar meus favoritos">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line>
-        </svg>
-        Compartilhar meus favoritos
-      </button>
+      
     </div>
   </aside>
 
+  <!-- Visualização ampliada da galeria -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Foto ampliada">
     <div class="lightbox-content">
       <button class="icon-button lightbox-close" id="lightbox-close" type="button" aria-label="Fechar foto">×</button>
@@ -1068,8 +1069,10 @@
     </div>
   </div>
 
+  <!-- Mensagens do sistema -->
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+  <!-- Scripts -->
   <script src="src/js/data/produtos.js"></script>
   <script src="src/js/data/galeria.js"></script>
   <script src="src/js/core/estado.js"></script>

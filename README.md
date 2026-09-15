@@ -19,7 +19,7 @@ Projeto acadêmico de uma loja de bicicletas, peças e acessórios. O projeto ap
 - CSS3
 - JavaScript
 
-Não há frameworks, banco de dados ou processo de build. Os dados dos produtos são estáticos e o estado do carrinho e dos favoritos é salvo no `localStorage` do navegador.
+Não há frameworks, banco de dados ou processo de build. Os dados dos produtos e o estado do carrinho são mantidos no navegador enquanto a página está aberta.
 
 ## Como executar
 
@@ -34,23 +34,13 @@ Para uma experiência mais próxima de um ambiente web, também é possível abr
 SOFTBIKE/
 ├── index.html          # Estrutura e conteúdo das páginas
 ├── style.css           # Estilos e layout responsivo
+├── script.js           # Produtos, filtros e interações
 ├── src/
-│   ├── js/
-│   │   ├── app.js                  # Inicialização e eventos da interface
-│   │   ├── core/estado.js          # Estado compartilhado e utilitários
-│   │   ├── data/galeria.js         # Dados das imagens da galeria
-│   │   ├── data/produtos.js        # Catálogo de produtos
-│   │   ├── navegacao/navegacao.js  # Rotas por hash e menu responsivo
-│   │   ├── loja/loja.js            # Catálogo, filtros e favoritos
-│   │   ├── carrinho/carrinho.js    # Carrinho, cupons e checkout
-│   │   └── galeria/galeria.js      # Filtros e lightbox
-│   └── produtos/                   # Imagens dos produtos do catálogo
+│   └── produtos/       # Imagens dos produtos do catálogo
 ├── LICENSE
 └── README.md
 ```
 
-As oito abas (`Início`, `Loja`, `Galeria`, `Guia`, `Empresa`, `Documentos`, `Tabela` e `Recursos`) continuam no `index.html` como rotas por hash. Essa escolha mantém a navegação, o carrinho e os favoritos funcionando juntos; o JavaScript foi separado por responsabilidade para que cada aba e comportamento possa ser localizado rapidamente.
-
 ## Observações
 
-Este é um projeto de demonstração para a disciplina de Desenvolvimento Web. O carrinho, os favoritos e os cupons não realizam compras reais. Algumas imagens da galeria e da página inicial são carregadas do Unsplash.
+Este é um projeto de demonstração para a disciplina de Desenvolvimento Web. O carrinho, os favoritos e os cupons não realizam compras reais e são reiniciados quando a página é recarregada. Algumas imagens da galeria e da página inicial são carregadas do Unsplash.
